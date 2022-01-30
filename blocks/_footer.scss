@@ -1,0 +1,26 @@
+.footer {
+    height: 70px;
+    font-size: 22px;
+    flex: 0 0 auto;
+    background-color: #FFE4C4;
+    color: #CD853F;
+    font-family: 'Cormorant Infant', serif;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        }
+
+    &__text {
+        align-self: center;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+        }
+
+    &__nav {
+        & li {
+            display: inline;
+            padding-right: 15px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+        }
+        }
+}

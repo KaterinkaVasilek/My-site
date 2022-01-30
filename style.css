@@ -32,7 +32,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: Times New Roman, serif;
+  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
 ul[class],
@@ -42,6 +42,10 @@ ol[class] {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a {
+  cursor: pointer;
 }
 
 img {
@@ -72,12 +76,92 @@ select {
   }
 }
 
+.hi__header {
+  background-color: #FFE4C4;
+  color: #CD853F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Cormorant Infant', serif;
+}
+
+.hi__body {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 30px;
+}
+
+.hi__title {
+  font-size: 22px;
+  letter-spacing: 10px;
+  padding-top: 30px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hi__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10px;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
 .hi__photo {
-  height: 350px;
+  height: 300px;
+  border-radius: 55px;
+}
+
+.footer {
+  height: 70px;
+  font-size: 22px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  background-color: #FFE4C4;
+  color: #CD853F;
+  font-family: 'Cormorant Infant', serif;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.footer__nav li {
+  display: inline;
+  padding-right: 15px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 .wrapper {
-  min-height: 100%;
+  min-height: inherit;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;

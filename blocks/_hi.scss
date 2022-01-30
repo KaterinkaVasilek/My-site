@@ -1,21 +1,38 @@
 .hi {
-
-    &__row {
+    &__header {
+        background-color: #FFE4C4;
+        color: #CD853F;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Cormorant Infant', serif;
     }
 
     &__body {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-right: 30px;
     }
 
     &__title {
+        font-size: 22px;
+        letter-spacing: 10px;
+        padding-top: 30px;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     }
 
     &__list {
-    }
-
-    &__image {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        font-size: 26px;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     }
 
     &__photo {
-        height: 350px;
+        height: 300px;
+        border-radius: 55px;
     }
 }
